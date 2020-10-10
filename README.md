@@ -5,6 +5,9 @@ This kata is inspired by the common rock-paper-scissors-lizard-spock game.
 You have to implement a rock-paper-scissors solver with TDD.
 Each step will add a new sign, for each step you have to create all tests for the new rules then modify the solver to pass the tests.
 
+The function takes in parameters the two sign select by each player. The function may return the winner sign or "draw" if no one wins.
+The solver must not be case-sensitive.
+
 # Rules & examples
 * Step 1 : Rock and Paper
   - The paper prevails against the rock.
@@ -21,14 +24,12 @@ Each step will add a new sign, for each step you have to create all tests for th
   - The lizard prevails against Spock.
   - The paper prevails against Spock.
   
+Examples :
+  - rockPaperScissors("rock", "paper") must return "paper"
+  - rockPaperScissors("rock", "rock") must return "draw"
+  
 ## Code
 In the `src/main/java` folder, you will find the class `App` with the function ready to be implemented.
-The function takes in parameters the two sign select by each player. The function may return the winner sign or "draw" if no one wins.
-The solver must not be case-sensitive.
-
-Examples :
-- RockPaperScissors("rock", "paper") must return "paper"
-- RockPaperScissors("rock", "rock") must return "draw"
 
 ## Test it
 You can use `mvn test` to test your code. If all tests pass, you can go to the next rule !
