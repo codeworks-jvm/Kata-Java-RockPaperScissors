@@ -30,6 +30,7 @@ Examples :
   
 ## Code
 In the `src/main/java` folder, you will find the class `App` with the function ready to be implemented.
+In the `src/test/java` folder, you will find the class `AppTest` with the first test ready to be implemented.
 
 ## Test it
 You can use `mvn test` to test your code. If all tests pass, you can go to the next rule !
